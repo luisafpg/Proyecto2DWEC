@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Aventura</title>
+  <link rel="stylesheet" href="./estilos.css">
+<script src="./script.js"></script>
+</head>
+<body>
+  <!-- formulario de inicio -->
+  <div id="ContenedorLogin">
+    <h1>Bienvenido al juego de Aventura</h1>
+    <h3>¿Estás listo?</h3>
+    <form id="formularioNombre">
+      <label for="nombre" id="nomblg">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Introduce tu nombre"><br><br>
+      <button type="submit" id="botonNombre">Introducir nombre</button>
+    </form>
+    <p id="mensajeValidacion"></p>
+    <button id="btn-jugar" disabled>Jugar</button>
+  </div>
+
+  <!-- contenedor de Juego -->
+  <div id="contenedorJuego" style="display: none;">
+    <div id="contenedorMensaje">
+      <h2 id="mensajeJuego"></h2>
+  </div>
+    <div id="tablero"></div>
+    <div id="contenedorDado">
+      <img id="imagen-dado" src="img/dado.png" alt="Dado" width="100">
+      <button id="btn-tirar-dado">Tirar dado</button>
+    </div>
+  </div>
+
+  <!-- contenedor final -->
+  <div id="contenedorFin" style="display: none;">
+    <h2>¡Ha finalizado la aventura, haz encontrado el cofre!</h2>
+    <p id="mensajeVictoria"></p>
+    <button id="boton-nueva-partida">Nueva partida</button>
+    <button id="boton-ranking">Mostrar ranking</button>
+  </div>
+</body>
+</html>

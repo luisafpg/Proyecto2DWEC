@@ -1,0 +1,106 @@
+body {
+  font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    margin: 0;
+    background: url("./img/fondo.jpg") center/cover no-repeat;
+}
+
+#nomblg{
+  font-size: 20px;
+}
+  #ContenedorLogin {
+    text-align: center;
+    padding: 40px;
+    width: 650px;
+    background-color: rgb(114, 135, 114);
+    border-radius: 20px;
+  }
+
+  h1,h3,h2{
+    font-size: 30px;
+    
+  }
+  
+  #formularioNombre {
+    margin-bottom: 20px;
+  }
+  
+  #nombre {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  #btn-jugar, #botonNombre {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(114, 135, 114);
+  }
+  
+  #contenedorJuego {
+    text-align: center;
+  }
+  
+  #tablero {
+    background: url("./img/suelo.jpg") center/cover no-repeat;
+    border-collapse: collapse;
+    width: 500px;
+    height: 500px;
+}
+  #tablero img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #tablero td {
+    width: auto;
+    height: auto;
+    aspect-ratio: 1;
+    border: 1px solid #444;
+    text-align: center;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#tablero table {
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+}
+#tablero td img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  
+  #imagen-dado {
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #btn-tirar-dado {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color:  rgb(114, 135, 114) ;
+    margin-top: -85px;
+  }
+  
+  #contenedorFin{
+    text-align: center;
+  }
+  
+  #boton-nueva-partida, #boton-ranking {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color:  rgb(114, 135, 114) ;
+  }
+  

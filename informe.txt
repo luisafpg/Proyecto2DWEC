@@ -1,0 +1,22 @@
+
+Decisiones de Diseño:
+
+Estructura Modular:
+Opté por un diseño modular para el proyecto, dividiendo cada funcionalidad en una función independiente. Esto hizo que el código fuera más comprensible y fácil de mantener, especialmente cuando fue necesario agregar nuevas características o depurar errores. Por ejemplo, la lógica de movimiento del héroe y la gestión de puntuaciones se implementaron en funciones separadas.
+
+Validación del Nombre del Jugador:
+Decidí que la validación del nombre del jugador se realizaría en tiempo real. Esto permitió al usuario corregir posibles errores antes de iniciar el juego y evitó validaciones innecesarias mientras el usuario estaba escribiendo.
+
+Gestión de Puntuaciones con localStorage:
+Usé localStorage para almacenar los récords de tiradas, ya que era una solución sencilla y efectiva para mantener persistencia en el navegador. Esto permitió que el ranking de jugadores y sus puntuaciones permanecieran disponibles entre sesiones
+
+Interfaz Intuitiva y Dinámica:
+Incorporé botones como "Nueva partida" y "Mostrar ranking" para que el flujo del juego fuera claro y dinámico. Por ejemplo, al finalizar el juego, el mensaje de victoria y los botones necesarios se mostraban en el mismo contenedor, centralizando la interacción del usuario en un único espacio.
+
+Desafíos Encontrados:
+
+Gestión del Estado del Juego
+Un problema que enfrenté fue sincronizar correctamente el estado del juego, como las posiciones del héroe y las tiradas, entre distintas funciones y sesiones. Tuve que reorganizar el flujo del programa para garantizar que el localStorage reflejara con precisión el progreso del juego y las puntuaciones.
+
+Flujo de Validación
+Integrar la validación del nombre dentro de la función principal del juego resultó más complicado de lo esperado. Hubo casos donde los botones no se habilitaban correctamente debido a eventos mal gestionados. Esto me obligó a repensar la forma en que los eventos estaban conectados con la interfaz.
